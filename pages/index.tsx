@@ -1,14 +1,14 @@
-import React from 'react';
-import { useUser } from '@auth0/nextjs-auth0/client';
+import React from "react";
+import { useUser } from "@auth0/nextjs-auth0/client";
 
-import Layout from '../components/layout';
+import Layout from "../components/layout";
 
 export default function Home(): React.ReactElement {
   const { user, error, isLoading } = useUser();
 
   return (
     <Layout>
-      <h1>Next.js and Auth0 Example</h1>
+      <h1>Test Branch</h1>
 
       {isLoading && <p>Loading login info...</p>}
 
@@ -32,7 +32,8 @@ export default function Home(): React.ReactElement {
             To test the login click in <i>Login</i>
           </p>
           <p>
-            Once you have logged in you should be able to click in <i>Protected Page</i> and <i>Logout</i>
+            Once you have logged in you should be able to click in{" "}
+            <i>Protected Page</i> and <i>Logout</i>
           </p>
         </>
       )}
